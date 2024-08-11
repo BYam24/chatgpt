@@ -81,7 +81,6 @@ import rocket from './assets/rocket.svg'
 import sendBtn from './assets/send.svg'
 import userIcon from './assets/goku.jpeg'
 
-// import userIcon from './assets/user-icon.png'
 import gptImgLogo from './assets/chatgptLogo.svg'
 import { sendMsgToOpenAI } from './openai.jsx';
 import React, { useEffect, useState, useRef } from 'react';
@@ -101,7 +100,7 @@ function App(){
   const messagesEndRef = useRef(null);
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([{
-    text: "Hi, I am ChatGPT.",
+    text: "Hi, I am your personal assistant. What can I do for you?",
     image: "",
     isBot: true,
   }]);
@@ -164,8 +163,8 @@ function App(){
             <div className="upperSideTop"> <img src={gptLogo} alt="logo" className="logo" /> <span className='brand'>ChatGPT</span> </div>
             <button className='midBtn' onClick={()=>window.location.reload()}> <img src={addBtn} alt="new chat" className="addBtn" />New Chat</button>
             <div className="upperSideBottom">
-              <button className="query" value={"What is Programming?"} onClick={handleQuery}><img src={msgIcon} alt="Query" />What is Programming?</button>
-              <button className="query" value={"How to use an API?"} onClick={handleQuery}><img src={msgIcon} alt="Query" />How to use an API?</button>
+              <button className="query" value={"How do I use this service?"} onClick={handleQuery}><img src={msgIcon} alt="Query" />How do I use this service?</button>
+              <button className="query" value={"Find me the hottest trend."} onClick={handleQuery}><img src={msgIcon} alt="Query" />Find me the hottest trend.</button>
             </div>
           </div>
           <div className="lowerSide">
