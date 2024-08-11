@@ -79,7 +79,9 @@ import home from './assets/home.svg'
 import saved from './assets/bookmark.svg'
 import rocket from './assets/rocket.svg'
 import sendBtn from './assets/send.svg'
-import userIcon from './assets/user-icon.png'
+import userIcon from './assets/goku.jpeg'
+
+// import userIcon from './assets/user-icon.png'
 import gptImgLogo from './assets/chatgptLogo.svg'
 import { sendMsgToOpenAI } from './openai.jsx';
 import React, { useEffect, useState, useRef } from 'react';
